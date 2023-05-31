@@ -66,10 +66,51 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "431a34e2-1000-47e3-ab9c-88442a8fe9be": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "drinkware"
+          }
+        },
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "footwear"
+          }
+        },
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts"
+          }
+        }
+      },
+      "block_order": [
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0",
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1",
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "431a34e2-1000-47e3-ab9c-88442a8fe9be"
   ]
 }

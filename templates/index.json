@@ -75,7 +75,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/high_quality_materials.jpg",
             "title": "<em>High Quality Materials<\/em>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Our products are meticulously crafted using the finest quality materials, ensuring exceptional durability and longevity. <\/p>",
             "link_label": "Learn More",
             "link": ""
           }
@@ -123,48 +123,46 @@
         "padding_bottom": 36
       }
     },
-    "12ad072d-2eee-4c22-baad-6770abe2ee33": {
-      "type": "multirow",
+    "d723d292-119d-46e2-8e16-eda1a98cbbbf": {
+      "type": "rich-text",
       "blocks": {
-        "template--19249918181678__12ad072d-2eee-4c22-baad-6770abe2ee33-1685560035a18384e3-0": {
-          "type": "row",
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-0": {
+          "type": "heading",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
           }
         },
-        "template--19249918181678__12ad072d-2eee-4c22-baad-6770abe2ee33-1685560035a18384e3-1": {
-          "type": "row",
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1": {
+          "type": "text",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-2": {
+          "type": "button",
+          "settings": {
             "button_label": "Button label",
-            "button_link": ""
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "template--19249918181678__12ad072d-2eee-4c22-baad-6770abe2ee33-1685560035a18384e3-0",
-        "template--19249918181678__12ad072d-2eee-4c22-baad-6770abe2ee33-1685560035a18384e3-1"
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-0",
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1",
+        "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-2"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "background-2",
-        "row_color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "016f59cc-bcca-4a42-85ca-d40c4019c63d": {
@@ -369,7 +367,7 @@
     "image_banner",
     "featured_collection",
     "f4daff55-a929-4be4-8ee1-f7109ed4994b",
-    "12ad072d-2eee-4c22-baad-6770abe2ee33",
+    "d723d292-119d-46e2-8e16-eda1a98cbbbf",
     "016f59cc-bcca-4a42-85ca-d40c4019c63d",
     "8a4daa10-60b0-4cdf-970a-a572ed3bf431",
     "4b6df9cc-0dda-41bb-ae40-cce68142bb64",

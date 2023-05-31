@@ -10,7 +10,7 @@
           "settings": {
             "text": "Welcome to Drew's Development Store",
             "text_alignment": "center",
-            "color_scheme": "background-1",
+            "color_scheme": "accent-1",
             "link": ""
           }
         }
@@ -27,7 +27,7 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "show_line_separator": true,
         "color_scheme": "accent-2",
         "enable_country_selector": false,

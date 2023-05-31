@@ -188,7 +188,7 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-2",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
       }

@@ -84,7 +84,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/artists_creating_digital_art.jpg",
-            "title": "Column",
+            "title": "<em>Artistic Designs<\/em>",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Learn More",
             "link": ""

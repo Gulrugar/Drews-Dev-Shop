@@ -113,7 +113,7 @@
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -157,7 +157,7 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
-        "section_color_scheme": "background-1",
+        "section_color_scheme": "background-2",
         "row_color_scheme": "background-1",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -355,7 +355,7 @@
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52

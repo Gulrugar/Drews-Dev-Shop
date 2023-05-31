@@ -4,7 +4,7 @@
     "logo_width": 110,
     "favicon": "shopify:\/\/shop_images\/profile-pic-favicon.png",
     "colors_solid_button_labels": "#000000",
-    "colors_accent_1": "#4ac69f",
+    "colors_accent_1": "#1ff2d8",
     "gradient_accent_1": "",
     "colors_accent_2": "#c395cf",
     "gradient_accent_2": "linear-gradient(127deg, rgba(254, 217, 81, 1) 11%, rgba(255, 70, 199, 1) 81%)",

@@ -15,7 +15,7 @@
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -43,9 +43,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Latest Arrivals",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Browse our latest arrival of art branded t-shirts, water bottles and sneakers<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",

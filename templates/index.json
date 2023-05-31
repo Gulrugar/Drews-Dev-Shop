@@ -74,7 +74,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/high_quality_materials.jpg",
-            "title": "High Quality Materials",
+            "title": "<em>High Quality Materials<\/em>",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Learn More",
             "link": ""

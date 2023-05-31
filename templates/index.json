@@ -44,7 +44,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Latest Arrivals",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "<p>Browse our latest arrival of art branded t-shirts, water bottles and sneakers<\/p>",
         "show_description": false,
         "description_style": "body",

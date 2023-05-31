@@ -4,6 +4,25 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "dcdd79a0-641b-485a-9e87-1ae30b386bf5": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "4b5f4ba0-5953-482d-8492-4b7e28578315": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "dcdd79a0-641b-485a-9e87-1ae30b386bf5",
+        "4b5f4ba0-5953-482d-8492-4b7e28578315"
+      ],
       "settings": {
         "color_scheme": "accent-2",
         "newsletter_enable": true,

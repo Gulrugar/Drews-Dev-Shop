@@ -6,8 +6,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "D.D.S.",
             "heading_size": "h0"
+          }
+        },
+        "963ae704-69e7-469c-b61a-e1f8f163c430": {
+          "type": "text",
+          "settings": {
+            "text": "Browse our latest products",
+            "text_style": "body"
           }
         },
         "button": {
@@ -24,11 +31,12 @@
       },
       "block_order": [
         "heading",
+        "963ae704-69e7-469c-b61a-e1f8f163c430",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 50,
         "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,

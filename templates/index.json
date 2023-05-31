@@ -73,6 +73,7 @@
         "template--19249918181678__f4daff55-a929-4be4-8ee1-f7109ed4994b-1685559961c44dfda4-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/high_quality_materials.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Learn More",

@@ -320,21 +320,21 @@
         "template--19249918181678__a4f2684f-178d-4525-9b58-96bc37f935c4-16855600588c3e85b6-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Looking for a Custom Design?",
             "heading_size": "h1"
           }
         },
         "template--19249918181678__a4f2684f-178d-4525-9b58-96bc37f935c4-16855600588c3e85b6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Discover the limitless possibilities of personalized style with DDS.<\/p><p>In addition to our extensive selection of high-quality products, we proudly offer custom designs that allow you to create something truly unique. Our team of skilled artisans and designers are ready to bring your vision to life, whether it's customizing an existing product or creating something entirely new. From personalized engravings to bespoke creations tailored to your specifications, we are committed to delivering exceptional craftsmanship and attention to detail.<\/p><p>Unleash your creativity and make a statement with our custom design services, turning your imagination into reality. Elevate your shopping experience and let us help you showcase your individuality and express your distinct taste.<\/p>"
           }
         },
         "template--19249918181678__a4f2684f-178d-4525-9b58-96bc37f935c4-16855600588c3e85b6-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Send Us An Email",
+            "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -350,8 +350,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
+        "color_scheme": "accent-1",
+        "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
       }

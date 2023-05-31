@@ -1,6 +1,7 @@
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify:\/\/shop_images\/logo_300x300_cf659581-659c-4b41-a96c-9497451f6140.png",
+    "logo_width": 110,
     "favicon": "shopify:\/\/shop_images\/profile-pic-favicon.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",

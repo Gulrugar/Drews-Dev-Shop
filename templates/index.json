@@ -104,14 +104,14 @@
         "template--19249918181678__f4daff55-a929-4be4-8ee1-f7109ed4994b-1685559961c44dfda4-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "About Our Products",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "Learn More",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",

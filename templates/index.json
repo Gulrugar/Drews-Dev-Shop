@@ -191,6 +191,33 @@
         "padding_bottom": 36
       }
     },
+    "8a4daa10-60b0-4cdf-970a-a572ed3bf431": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Footwear",
+        "heading_size": "h1",
+        "description": "<p>All footwear is on sale 25% percent off<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "footwear",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "431a34e2-1000-47e3-ab9c-88442a8fe9be": {
       "type": "collection-list",
       "blocks": {
@@ -314,6 +341,7 @@
     "f4daff55-a929-4be4-8ee1-f7109ed4994b",
     "12ad072d-2eee-4c22-baad-6770abe2ee33",
     "016f59cc-bcca-4a42-85ca-d40c4019c63d",
+    "8a4daa10-60b0-4cdf-970a-a572ed3bf431",
     "431a34e2-1000-47e3-ab9c-88442a8fe9be",
     "a4f2684f-178d-4525-9b58-96bc37f935c4",
     "03881e2f-a97c-4d17-939a-0ef2863dcc83"

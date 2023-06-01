@@ -303,7 +303,7 @@
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "drinkware"
+            "collection": "bracelets"
           }
         },
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1": {
@@ -315,14 +315,35 @@
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "t-shirts"
+            "collection": "hoodies"
+          }
+        },
+        "c18f16dc-9e1c-473a-8d41-374d98ce4718": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "phone-covers"
+          }
+        },
+        "a2680a01-239c-4020-b0c0-26b68e96d205": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "watches"
+          }
+        },
+        "7d2a7b90-7b5c-4ff9-9159-713c3a9c62aa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0",
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1",
-        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2"
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2",
+        "c18f16dc-9e1c-473a-8d41-374d98ce4718",
+        "a2680a01-239c-4020-b0c0-26b68e96d205",
+        "7d2a7b90-7b5c-4ff9-9159-713c3a9c62aa"
       ],
       "settings": {
         "title": "Categories",

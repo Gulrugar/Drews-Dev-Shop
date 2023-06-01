@@ -131,6 +131,37 @@
         "padding_bottom": 36
       }
     },
+    "cbcaaab6-0a44-47c9-abef-89d4c1b3f85d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1"
+      ],
+      "custom_css": [
+        ".banner__box {font-size: 2rem; padding: 1rem 0.5rem;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "d723d292-119d-46e2-8e16-eda1a98cbbbf": {
       "type": "rich-text",
       "blocks": {
@@ -395,6 +426,7 @@
     "image_banner",
     "featured_collection",
     "f4daff55-a929-4be4-8ee1-f7109ed4994b",
+    "cbcaaab6-0a44-47c9-abef-89d4c1b3f85d",
     "d723d292-119d-46e2-8e16-eda1a98cbbbf",
     "016f59cc-bcca-4a42-85ca-d40c4019c63d",
     "8a4daa10-60b0-4cdf-970a-a572ed3bf431",

@@ -56,7 +56,7 @@
         "description": "<p>Browse our latest arrival of art branded t-shirts, water bottles and sneakers<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "latest-arrivals",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -181,13 +181,6 @@
             "heading_size": "h1"
           }
         },
-        "795c188e-1670-4636-8d5e-4af311b5493d": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>D D S<\/strong>",
-            "heading_size": "h1"
-          }
-        },
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1": {
           "type": "text",
           "settings": {
@@ -208,7 +201,6 @@
       },
       "block_order": [
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-0",
-        "795c188e-1670-4636-8d5e-4af311b5493d",
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1",
         "ef3d004a-fcf9-4ac9-9338-9e641350174b"
       ],

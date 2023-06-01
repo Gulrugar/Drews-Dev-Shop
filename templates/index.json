@@ -134,15 +134,23 @@
     "cbcaaab6-0a44-47c9-abef-89d4c1b3f85d": {
       "type": "image-banner",
       "blocks": {
+        "d1358a5f-9dd3-4e71-a6c7-7b3f7500f570": {
+          "type": "heading",
+          "settings": {
+            "heading": "D D S",
+            "heading_size": "h1"
+          }
+        },
         "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1": {
           "type": "text",
           "settings": {
-            "text": "Unlock the power of personalization and express your unique style with our extensive range of products. From customizable apparel to personalized accessories, our store offers an array of options to make each item truly your own.",
+            "text": "Unlock the power of personalization and express your unique style with our extensive range of products.",
             "text_style": "body"
           }
         }
       },
       "block_order": [
+        "d1358a5f-9dd3-4e71-a6c7-7b3f7500f570",
         "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1"
       ],
       "custom_css": [

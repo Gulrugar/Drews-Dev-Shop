@@ -13,7 +13,7 @@
         "963ae704-69e7-469c-b61a-e1f8f163c430": {
           "type": "text",
           "settings": {
-            "text": "Browse our latest products",
+            "text": "A wide range of apparel featuring captivating graphic designs.",
             "text_style": "body"
           }
         },
@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",
         "image_overlay_opacity": 50,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",

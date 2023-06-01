@@ -420,6 +420,9 @@
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-1",
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-2"
       ],
+      "custom_css": [
+        ".newsletter-form__field-wrapper input {background-color: #fff;}"
+      ],
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,

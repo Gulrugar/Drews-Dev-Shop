@@ -146,7 +146,7 @@
         "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1"
       ],
       "custom_css": [
-        ".banner__box {color: red; font-size: 2rem; padding: 1rem 1rem;}"
+        ".banner__box {color: white; font-size: 2rem; padding: 1rem 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",

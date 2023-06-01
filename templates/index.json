@@ -198,21 +198,10 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Apparel",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/apparel",
             "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "2b0d8f0d-34f0-4e3c-aecd-4c8306da7af6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Accessories",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Shop Accessories",
+            "button_link_2": "shopify:\/\/collections\/accessories",
             "button_style_secondary_2": false
           }
         }
@@ -221,8 +210,10 @@
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-0",
         "795c188e-1670-4636-8d5e-4af311b5493d",
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1",
-        "ef3d004a-fcf9-4ac9-9338-9e641350174b",
-        "2b0d8f0d-34f0-4e3c-aecd-4c8306da7af6"
+        "ef3d004a-fcf9-4ac9-9338-9e641350174b"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "desktop_content_position": "center",

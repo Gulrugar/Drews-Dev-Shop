@@ -2,6 +2,9 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero {background-color: rgba(0, 0, 255, 25%); color: black;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,

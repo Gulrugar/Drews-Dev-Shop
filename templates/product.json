@@ -46,9 +46,9 @@
         "19b0d799-f5e4-4d35-a5b2-e5105344fbaf": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Details",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "Key Features",
+            "icon": "star",
+            "content": "{{ product.metafields.custom.key_features_unique | metafield_tag }}{{ product.metafields.custom.key_features_metaobject.value.content | metafield_tag }}",
             "page": ""
           }
         },

@@ -52,6 +52,15 @@
             "page": ""
           }
         },
+        "9c7e487e-bc7e-4259-9ecb-eb113e263db4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -68,6 +77,7 @@
         "buy_buttons",
         "description",
         "19b0d799-f5e4-4d35-a5b2-e5105344fbaf",
+        "9c7e487e-bc7e-4259-9ecb-eb113e263db4",
         "share"
       ],
       "settings": {

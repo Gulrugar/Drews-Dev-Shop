@@ -70,6 +70,9 @@
         "19b0d799-f5e4-4d35-a5b2-e5105344fbaf",
         "share"
       ],
+      "custom_css": [
+        ".product__accordion .icon-accordion {stroke: orange;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "media_size": "large",

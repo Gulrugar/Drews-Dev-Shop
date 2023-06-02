@@ -67,7 +67,7 @@
         class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-        {% assign firstCollapsibleTab = 'true' %}
+        {% assign firstCollapsibleTab = true %}
         
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -181,8 +181,8 @@
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                <details id="Details-{{ block.id }}-{{ section.id }}" {% if firstCollapsibleTab == 'true' %}open{% endif %}>
-                  {% assign firstCollapsibleTab = 'false' %}
+                <details id="Details-{{ block.id }}-{{ section.id }}" {% if firstCollapsibleTab %}open{% endif %}>
+                  {% assign firstCollapsibleTab = false %}
                   <summary>
                     <div class="summary__title">
                       {% render 'icon-accordion', icon: block.settings.icon %}

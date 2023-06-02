@@ -10,6 +10,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        "[class^=\"section-template-\"] {background-color: rgba(0, 0, 255, 25%); }"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,

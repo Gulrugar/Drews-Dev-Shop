@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-first-collapse-open",
       "blocks": {
         "vendor": {
           "type": "text",

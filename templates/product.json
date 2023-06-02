@@ -43,19 +43,19 @@
           "settings": {
           }
         },
+        "19b0d799-f5e4-4d35-a5b2-e5105344fbaf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "19b0d799-f5e4-4d35-a5b2-e5105344fbaf": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
           }
         }
       },
@@ -67,8 +67,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "19b0d799-f5e4-4d35-a5b2-e5105344fbaf"
+        "19b0d799-f5e4-4d35-a5b2-e5105344fbaf",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,

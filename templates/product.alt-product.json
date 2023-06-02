@@ -71,7 +71,7 @@
         "share"
       ],
       "custom_css": [
-        ".product__accordion .icon-accordion {stroke: cyan;}"
+        ".product__accordion .icon-accordion {stroke: orange;}"
       ],
       "settings": {
         "enable_sticky_info": true,

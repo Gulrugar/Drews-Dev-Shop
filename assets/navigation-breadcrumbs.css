@@ -1,5 +1,5 @@
 .navigation-breadcrumbs span[aria-hidden] {
-  padding: 0 5px;
+  padding: 0 1.25rem;
 }
 
 .navigation-breadcrumbs::after {
@@ -8,5 +8,20 @@
   height: 1px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: translateY(var(--padding-bottom));
+}
+
+.navigation-breadcrumbs a {
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  transition: text-decoration var(--duration-short) ease;
+}
+
+.navigation-breadcrumbs a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.3rem;
+  color: rgb(var(--color-foreground));
 }

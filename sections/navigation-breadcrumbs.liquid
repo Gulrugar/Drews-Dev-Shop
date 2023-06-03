@@ -21,50 +21,54 @@
     background-color: {{ section.settings.background_color }};
   }
 
+  .navigation-breadcrumbs::after {
+    transform: translateY({{ section.settings.padding_bottom }}px);
+  }
+
 {%- endstyle -%}
 
-<div class="navigation-breadcrumbs section-{{ section.id }}-padding" style="--padding-bottom: {{ section.settings.padding_bottom }}px">
+<div class="navigation-breadcrumbs section-{{ section.id }}-padding">
   {%- unless template == 'index' or template == 'cart' or template == 'collections' -%}
     <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
       <a href="{{ routes.root_url }}" title="Home">Home</a>
       {%- if template contains 'page' -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         <span>{{ page.title }}</span>
       {%- elsif template contains 'product' -%}
         {%- if collection.url -%}
-          <span aria-hidden="true">&rsaquo;</span>
+          <span aria-hidden="true">/</span>
           {{ collection.title | link_to: collection.url }}
         {%- endif -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         <span>{{ product.title }}</span>
       {%- elsif template contains 'collection' and collection.handle -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         {%- if current_tags -%}
           {% capture url %}
             {{ routes.root_url }}/collections/{{ collection.handle }}
           {% endcapture %}
           {{ collection.title | link_to: url }}
-          <span aria-hidden="true">&rsaquo;</span>
+          <span aria-hidden="true">/</span>
           <span>{{ current_tags | join: "+" }}</span>
         {%- else -%}
           <span>{{ collection.title }}</span>
         {%- endif -%}
       {%- elsif template == 'blog' -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         {%- if current_tags -%}
           {{ blog.title | line_to: blog.url }}
-          <span aria-hidden="true">&rsaquo;</span>
+          <span aria-hidden="true">/</span>
           <span>{{ current_tags | join: "+" }}</span>
         {%- else -%}
           <span>{{ blog.title }}</span>
         {%- endif -%}
       {%- elsif template == 'article' -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         {{ blog.title | link_to: blog.url }}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         <span>{{ article.title }}</span>
       {%- else -%}
-        <span aria-hidden="true">&rsaquo;</span>
+        <span aria-hidden="true">/</span>
         <span>{{ page_title }}</span>
       {%- endif -%}
     </nav>

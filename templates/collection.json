@@ -3,7 +3,7 @@
     "2df36ed7-26f3-427f-adf8-52bea4a9c92f": {
       "type": "navigation-breadcrumbs",
       "settings": {
-        "background_color": "#bfbfff",
+        "background_color": "#fff",
         "padding_top": 16,
         "padding_bottom": 16
       }

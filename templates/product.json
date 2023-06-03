@@ -5,8 +5,7 @@
       "settings": {
         "background_color": "#fff",
         "padding_top": 28,
-        "padding_bottom": 0,
-        "padding_left": 20
+        "padding_bottom": 0
       }
     },
     "main": {

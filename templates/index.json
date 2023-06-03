@@ -36,6 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",
+        "image_loading": "eager",
         "image_overlay_opacity": 50,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -159,6 +160,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/urban-mens-fashion-on-young-adult.jpg",
         "image_2": "shopify:\/\/shop_images\/woman-sits-on-a-bath-surrounded-by-rubber-ducks.jpg",
+        "image_loading": "lazy",
         "image_overlay_opacity": 50,
         "image_height": "medium",
         "desktop_content_position": "middle-center",

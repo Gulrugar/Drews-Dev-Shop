@@ -160,6 +160,10 @@
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
+            <!-- Rivo Reviews Stars Begin -->
+             <div class="rivo-reviews-star-rating" data-product-id="{{ product.id }}" data-rating="{{ product.metafields.ba_rev.review_data.stars }}" data-count="{{ product.metafields.ba_rev.review_data.reviews_count }}"> <div class="rivo-reviews-rating-count"></div></div>
+            <!-- Rivo Reviews Stars End -->
+
             {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
               {% liquid
                 assign rating_decimal = 0

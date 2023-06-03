@@ -198,7 +198,9 @@
             {%- endif -%}
 
             <!-- Rivo Reviews Stars Begin -->
-             <div class="rivo-reviews-star-rating" data-product-id="{{ product.id }}" data-rating="{{ product.metafields.ba_rev.review_data.stars }}" data-count="{{ product.metafields.ba_rev.review_data.reviews_count }}"> <div class="rivo-reviews-rating-count"></div></div>
+             <div class="rivo-reviews-star-rating" data-product-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.ba_rev.review_data.stars }}" data-count="{{ card_product.metafields.ba_rev.review_data.reviews_count }}">
+                <div class="rivo-reviews-rating-count"></div>
+             </div>
             <!-- Rivo Reviews Stars End -->
 
             {% render 'price', product: card_product, price_class: '' %}

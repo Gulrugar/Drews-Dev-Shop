@@ -66,7 +66,7 @@
         section.settings.image
         | image_url: width: 3840
         | image_tag:
-          loading: 'lazy',
+          loading: section.settings.image_loading,
           width: section.settings.image.width,
           height: image_height,
           class: image_class,
@@ -98,7 +98,7 @@
         section.settings.image_2
         | image_url: width: 3840
         | image_tag:
-          loading: 'lazy',
+          loading: section.settings.image_loading,
           width: section.settings.image_2.width,
           height: image_height_2,
           class: image_class_2,
@@ -171,6 +171,22 @@
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
+    },
+    {
+      "type": "select",
+      "id": "image_loading",
+      "label": "Image Loading",
+      "options": [
+        {
+          "value": "eager",
+          "label": "Eager"
+        },
+        {
+          "value": "lazy",
+          "label": "Lazy"
+        }
+      ],
+      "default": "lazy"
     },
     {
       "type": "range",

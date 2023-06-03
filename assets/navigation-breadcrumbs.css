@@ -25,3 +25,9 @@
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-foreground));
 }
+
+@media screen and (max-width: 749px) {
+  .navigation-breadcrumbs {
+    display: none;
+  }
+}

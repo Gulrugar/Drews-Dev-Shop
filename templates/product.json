@@ -95,6 +95,22 @@
         "padding_bottom": 12
       }
     },
+    "1685752114cadc6339": {
+      "type": "apps",
+      "blocks": {
+        "1e9e06ca-6d6a-4189-be2e-7c7b7792fef8": {
+          "type": "shopify:\/\/apps\/rivo-product-reviews-app-ugc\/blocks\/reviews-widget\/5f785e18-66cc-4519-8181-565d1cce1705",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1e9e06ca-6d6a-4189-be2e-7c7b7792fef8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -115,6 +131,7 @@
   },
   "order": [
     "main",
+    "1685752114cadc6339",
     "related-products"
   ]
 }

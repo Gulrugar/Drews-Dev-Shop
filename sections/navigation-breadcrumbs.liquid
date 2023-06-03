@@ -21,12 +21,9 @@
     background-color: {{ section.settings.background_color }};
   }
 
-  .navigation-breadcrumbs span[aria-hidden] {
-    padding: 0 5px;
-  }
 {%- endstyle -%}
 
-<div class="navigation-breadcrumbs section-{{ section.id }}-padding">
+<div class="navigation-breadcrumbs section-{{ section.id }}-padding" style="--padding-bottom: {{ section.settings.padding_bottom }}px">
   {%- unless template == 'index' or template == 'cart' or template == 'collections' -%}
     <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
       <a href="{{ routes.root_url }}" title="Home">Home</a>

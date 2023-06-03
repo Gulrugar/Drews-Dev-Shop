@@ -1,0 +1,12 @@
+.navigation-breadcrumbs span[aria-hidden] {
+  padding: 0 5px;
+}
+
+.navigation-breadcrumbs::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(var(--padding-bottom));
+}

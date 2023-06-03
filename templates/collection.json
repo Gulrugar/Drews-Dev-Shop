@@ -1,13 +1,5 @@
 {
   "sections": {
-    "2df36ed7-26f3-427f-adf8-52bea4a9c92f": {
-      "type": "navigation-breadcrumbs",
-      "settings": {
-        "background_color": "#fff",
-        "padding_top": 16,
-        "padding_bottom": 16
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
@@ -17,6 +9,14 @@
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "2df36ed7-26f3-427f-adf8-52bea4a9c92f": {
+      "type": "navigation-breadcrumbs",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "product-grid": {
@@ -42,8 +42,8 @@
     }
   },
   "order": [
-    "2df36ed7-26f3-427f-adf8-52bea4a9c92f",
     "banner",
+    "2df36ed7-26f3-427f-adf8-52bea4a9c92f",
     "product-grid"
   ]
 }

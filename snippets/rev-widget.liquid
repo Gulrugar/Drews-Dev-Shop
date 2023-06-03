@@ -1,0 +1,3 @@
+{% if widget_type == 'stars' %}
+  <div class="rivo-reviews-star-rating" data-product-id="{{ product.id }}" data-rating="{{ product.metafields.ba_rev.review_data.stars }}" data-count="{{ product.metafields.ba_rev.review_data.reviews_count }}"></div>
+{% endif %}

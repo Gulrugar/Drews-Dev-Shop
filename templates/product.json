@@ -1,5 +1,10 @@
 {
   "sections": {
+    "43205ce1-2763-44e4-a0c1-4b2704e0cb08": {
+      "type": "navigation-breadcrumbs",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product-first-collapse-open",
       "blocks": {
@@ -130,6 +135,7 @@
     }
   },
   "order": [
+    "43205ce1-2763-44e4-a0c1-4b2704e0cb08",
     "main",
     "1685752114cadc6339",
     "related-products"

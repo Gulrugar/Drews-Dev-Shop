@@ -11,6 +11,11 @@
         "color_scheme": "background-1"
       }
     },
+    "2df36ed7-26f3-427f-adf8-52bea4a9c92f": {
+      "type": "navigation-breadcrumbs",
+      "settings": {
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
@@ -35,6 +40,7 @@
   },
   "order": [
     "banner",
+    "2df36ed7-26f3-427f-adf8-52bea4a9c92f",
     "product-grid"
   ]
 }

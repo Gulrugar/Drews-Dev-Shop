@@ -14,7 +14,9 @@
     "2df36ed7-26f3-427f-adf8-52bea4a9c92f": {
       "type": "navigation-breadcrumbs",
       "settings": {
-        "background_color": "#bfbfff"
+        "background_color": "#bfbfff",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-grid": {

@@ -2,14 +2,75 @@
   This code is from https://ecomexperts.io/blogs/liquid-tutorial-shopify/how-to-add-breadcrumb-navigation-to-your-shopify-store-diy-tutorial-using-code#:~:text=To%20add%20breadcrumb%20navigation%20to%20your%20store%3A%201,into%20the%20code%20editor%20for%20the%20breadcrumbs.liquid%20snippet%3A
 {% endcomment %}
 
-<div class="navigation-breadcrumbs page-width">
-  <span>{{ template }}</span>
+{{ 'navigation-breadcrumbs.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-left: {{ section.settings.padding_left | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-left: {{ section.settings.padding_left }}px;
+    }
+  }
+
+  .navigation-breadcrumbs {
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .navigation-breadcrumbs span[aria-hidden] {
+    padding: 0 5px;
+  }
+{%- endstyle -%}
+
+<div class="navigation-breadcrumbs section-{{ section.id }}-padding">
   {%- unless template == 'index' or template == 'cart' or template == 'collections' -%}
-    <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+    <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
       <a href="{{ routes.root_url }}" title="Home">Home</a>
       {%- if template contains 'page' -%}
         <span aria-hidden="true">&rsaquo;</span>
         <span>{{ page.title }}</span>
+      {%- elsif template contains 'product' -%}
+        {%- if collection.url -%}
+          <span aria-hidden="true">&rsaquo;</span>
+          {{ collection.title | link_to: collection.url }}
+        {%- endif -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ product.title }}</span>
+      {%- elsif template contains 'collection' and collection.handle -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        {%- if current_tags -%}
+          {% capture url %}
+            {{ routes.root_url }}/collections/{{ collection.handle }}
+          {% endcapture %}
+          {{ collection.title | link_to: url }}
+          <span aria-hidden="true">&rsaquo;</span>
+          <span>{{ current_tags | join: "+" }}</span>
+        {%- else -%}
+          <span>{{ collection.title }}</span>
+        {%- endif -%}
+      {%- elsif template == 'blog' -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        {%- if current_tags -%}
+          {{ blog.title | line_to: blog.url }}
+          <span aria-hidden="true">&rsaquo;</span>
+          <span>{{ current_tags | join: "+" }}</span>
+        {%- else -%}
+          <span>{{ blog.title }}</span>
+        {%- endif -%}
+      {%- elsif template == 'article' -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        {{ blog.title | link_to: blog.url }}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ article.title }}</span>
+      {%- else -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ page_title }}</span>
       {%- endif -%}
     </nav>
   {%- endunless -%}
@@ -24,7 +85,37 @@
         "id": "background_color",
         "label": "Background Color",
         "default": "#fff"
-      }
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Left",
+      "default": 36
+    }
     ],
     "presets": [
       {

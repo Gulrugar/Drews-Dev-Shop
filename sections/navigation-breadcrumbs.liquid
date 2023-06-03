@@ -1,0 +1,27 @@
+{% comment %}
+  This code is from https://ecomexperts.io/blogs/liquid-tutorial-shopify/how-to-add-breadcrumb-navigation-to-your-shopify-store-diy-tutorial-using-code#:~:text=To%20add%20breadcrumb%20navigation%20to%20your%20store%3A%201,into%20the%20code%20editor%20for%20the%20breadcrumbs.liquid%20snippet%3A
+{% endcomment %}
+
+<div class="navigation-breadcrumbs page-width">
+  <span>{{ template }}</span>
+  {%- unless template == 'index' or template == 'cart' or template == 'collections' -%}
+    <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+      <a href="{{ routes.root_url }}" title="Home">Home</a>
+      {%- if template contains 'page' -%}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ page.title }}</span>
+      {%- endif -%}
+    </nav>
+  {%- endunless -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Navigation Breadcrumbs",
+    "presets": [
+      {
+        "name": "Navigation Breadcrumbs"
+      }
+    ]
+  }
+{% endschema %}

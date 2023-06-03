@@ -137,6 +137,13 @@
       </div>
       <div class="card__content">
         <div class="card__information">
+  
+          <!-- Rivo Reviews Stars Begin -->
+           <div class="rivo-reviews-star-rating" data-product-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.ba_rev.review_data.stars }}" data-count="{{ card_product.metafields.ba_rev.review_data.reviews_count }}">
+              <div class="rivo-reviews-rating-count"></div>
+           </div>
+          <!-- Rivo Reviews Stars End -->
+  
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -196,12 +203,6 @@
                 </span>
               </p>
             {%- endif -%}
-
-            <!-- Rivo Reviews Stars Begin -->
-             <div class="rivo-reviews-star-rating" data-product-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.ba_rev.review_data.stars }}" data-count="{{ card_product.metafields.ba_rev.review_data.reviews_count }}">
-                <div class="rivo-reviews-rating-count"></div>
-             </div>
-            <!-- Rivo Reviews Stars End -->
 
             {% render 'price', product: card_product, price_class: '' %}
           </div>

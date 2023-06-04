@@ -238,8 +238,7 @@
     </script>
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 </head>
-
-  <body class="gradient">
+  <body class="gradient" id="home">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -260,6 +259,10 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
+
+    <a href="#home" class="gotopbtn">
+      {% render 'fa-solid-up-arrow' %}
+    </a>
 
     <script>
       window.shopUrl = '{{ request.origin }}';

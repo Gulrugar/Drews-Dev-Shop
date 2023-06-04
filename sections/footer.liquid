@@ -330,6 +330,11 @@
             </ul>
           </div>
         {%- endif -%}
+        <!-- Development Store Only Payment Icons START -->
+        {%- if section.settings.dev_payment_enable -%}
+          {% render 'dev-payment-icons' %}
+        {%- endif -%}
+        <!-- Development Store Only Payment Icons END -->
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
@@ -566,6 +571,12 @@
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "dev_payment_enable",
+      "default": true,
+      "label": "Enable Payment Icons in a Development Store"
     },
     {
       "type": "header",

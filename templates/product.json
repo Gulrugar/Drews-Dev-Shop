@@ -3,11 +3,11 @@
     "43205ce1-2763-44e4-a0c1-4b2704e0cb08": {
       "type": "navigation-breadcrumbs",
       "settings": {
-        "background_color": "#fff",
-        "padding_top": 16,
-        "padding_bottom": 16,
+        "background_color": "#ffffff",
         "border_top": false,
-        "border_bottom": true
+        "border_bottom": true,
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "main": {
@@ -69,7 +69,7 @@
             "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 10,
-            "products_per_page": 3,
+            "products_per_page": 4,
             "pagination_style": "counter",
             "image_ratio": "square",
             "enable_quick_add": true

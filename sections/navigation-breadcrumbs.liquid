@@ -20,10 +20,28 @@
   .navigation-breadcrumbs {
     background-color: {{ section.settings.background_color }};
   }
+  
+  {%- if section.settings.border_top -%}
+    .navigation-breadcrumbs::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transform: translateY(-{{ section.settings.padding_top }}px);
+    }
+  {%- endif -%}
 
-  .navigation-breadcrumbs::after {
-    transform: translateY({{ section.settings.padding_bottom }}px);
-  }
+  {%- if section.settings.border_top -%}
+    .navigation-breadcrumbs::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transform: translateY({{ section.settings.padding_bottom }}px);
+    }
+  {%- endif -%}
 
 {%- endstyle -%}
 
@@ -84,6 +102,18 @@
         "id": "background_color",
         "label": "Background Color",
         "default": "#fff"
+      },
+      {
+        "type": "checkbox",
+        "id": "border_top",
+        "default": false,
+        "label": "Show Border Top"
+      },
+      {
+        "type": "checkbox",
+        "id": "border_bottom",
+        "default": false,
+        "label": "Show Border Bottom"
       },
       {
       "type": "range",

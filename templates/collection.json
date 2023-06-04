@@ -16,7 +16,9 @@
       "settings": {
         "background_color": "#ffffff",
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 16,
+        "border_top": true,
+        "border_bottom": true
       }
     },
     "product-grid": {

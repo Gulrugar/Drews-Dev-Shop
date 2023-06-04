@@ -5,7 +5,9 @@
       "settings": {
         "background_color": "#fff",
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 16,
+        "border_top": false,
+        "border_bottom": true
       }
     },
     "main": {

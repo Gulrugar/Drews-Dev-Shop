@@ -98,6 +98,7 @@
   .footer__column--info {
     padding-left: 0;
     padding-right: 0;
+    /* Custom Code: comment align-items: flex-end*/
     /* align-items: flex-end; */
   }
 }

@@ -2,21 +2,42 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
-      "settings": { "padding_top": 36, "padding_bottom": 36 }
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
-        "subtotal": { "type": "subtotal", "settings": {} },
-        "buttons": { "type": "buttons", "settings": {} },
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        },
         "additional_text": {
           "type": "additional_text",
-          "setting": {}
+          "settings": {
+            "content": "<p>Orders will be processed within 14 days. Due to current Global Shipping Issues, please allow up to 6 weeks for your order to arrive.<br\/><br\/>All sales are final! Please double check and triple check your address and sizes! We are not responsible for international taxes and fees that you may be charged. If you have questions or concerns about your order please <a href=\"\/policies\/contact-information\" target=\"_blank\" title=\"Contact Information\">Contact Us <em>&rsaquo;<\/em><\/a><\/p>"
+          }
         }
       },
-      "block_order": ["subtotal", "buttons", "additional_text"],
-      "settings": {}
+      "block_order": [
+        "subtotal",
+        "buttons",
+        "additional_text"
+      ],
+      "settings": {
+      }
     }
   },
-  "order": ["cart-items", "cart-footer"]
+  "order": [
+    "cart-items",
+    "cart-footer"
+  ]
 }

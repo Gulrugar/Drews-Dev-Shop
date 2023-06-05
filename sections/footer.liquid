@@ -68,7 +68,7 @@
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                {%- if block.settings.heading != blank -%}
+                {%- if block.settings.heading != blank and block.type != 'link_list' -%}
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
@@ -81,18 +81,30 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
-                        {%- for link in block.settings.menu.links -%}
-                          <li>
-                            <a
-                              href="{{ link.url }}"
-                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
-                            >
-                              {{ link.title }}
-                            </a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
+                      <details class="custom-details">
+                        <summary>
+                          {%- if block.settings.heading != blank -%}
+                            <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                          {%- else -%}
+                            <h2 class="footer-block__heading-inline-richtext">
+                              <p>Menu</p>
+                            </h2>
+                          {%- endif -%}
+                          {% render 'icon-caret' %}
+                        </summary>
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </details>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
@@ -364,6 +376,37 @@
 {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
   <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+
+<!-- Custom Code-->
+<script>
+  /* General Variables */
+  const customDetails = document.querySelectorAll('.custom-details')
+
+  /* Media Queries */
+  const mediaQuery = window.matchMedia("(min-width: 750px)");
+
+  function handleMediaQueryChange(mediaQuery) {
+    if (mediaQuery.matches) {
+      customDetails.forEach(element => {
+        element.setAttribute('open', '')
+      })
+    } else {
+      customDetails.forEach(element => {
+        element.removeAttribute('open')
+      })
+    }
+  }
+  handleMediaQueryChange(mediaQuery);
+  mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+  /* Smooth Toggle Open/Close */
+
+  customDetails.forEach(element => {
+    element.addEventListener("toggle", (event) => {
+      element.querySelector('ul').classList.toggle('custom-show')
+    })
+  });
+</script>
 
 {% schema %}
 {

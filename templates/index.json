@@ -159,7 +159,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/urban-mens-fashion-on-young-adult.jpg",
-        "image_2": "shopify:\/\/shop_images\/woman-sits-on-a-bath-surrounded-by-rubber-ducks.jpg",
         "image_loading": "lazy",
         "image_overlay_opacity": 50,
         "image_height": "medium",

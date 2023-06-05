@@ -92,6 +92,11 @@
         <div id="cart-errors"></div>
       </div>
     </div>
+    {%- if settings.show_cart_note == false and section.settings.show_additional_text -%}
+      <div class="rte">
+        {{ section.settings.additional_text }}
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
@@ -120,6 +125,24 @@
 {
   "name": "t:sections.main-cart-footer.name",
   "class": "cart__footer-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Additional Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_additional_text",
+      "label": "Show Additional Text",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "additional_text",
+      "label": "Additional Text",
+      "default": "<p>Hello World</p>"
+    }
+  ],
   "blocks": [
     {
       "type": "subtotal",

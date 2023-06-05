@@ -301,22 +301,22 @@
     "431a34e2-1000-47e3-ab9c-88442a8fe9be": {
       "type": "collection-list",
       "blocks": {
-        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0": {
+        "adad7ffc-25b8-4fc7-bd68-d7e2af0df51a": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bracelets"
-          }
-        },
-        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "footwear"
+            "collection": "hats"
           }
         },
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2": {
           "type": "featured_collection",
           "settings": {
             "collection": "hoodies"
+          }
+        },
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bracelets"
           }
         },
         "c18f16dc-9e1c-473a-8d41-374d98ce4718": {
@@ -333,9 +333,9 @@
         }
       },
       "block_order": [
-        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0",
-        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-1",
+        "adad7ffc-25b8-4fc7-bd68-d7e2af0df51a",
         "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-2",
+        "template--19249918181678__431a34e2-1000-47e3-ab9c-88442a8fe9be-16855598546f097132-0",
         "c18f16dc-9e1c-473a-8d41-374d98ce4718",
         "a2680a01-239c-4020-b0c0-26b68e96d205"
       ],

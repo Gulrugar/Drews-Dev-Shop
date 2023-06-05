@@ -537,13 +537,3 @@
 .custom-details ul {
   padding-top: 1rem;
 }
-
-.custom-details ul {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-
-.custom-details ul.custom-show {
-  max-height: 500px;
-}

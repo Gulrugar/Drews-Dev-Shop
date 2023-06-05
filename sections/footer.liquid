@@ -383,29 +383,23 @@
   const customDetails = document.querySelectorAll('.custom-details')
 
   /* Media Queries */
-  const mediaQuery = window.matchMedia("(min-width: 750px)");
-
-  function handleMediaQueryChange(mediaQuery) {
-    if (mediaQuery.matches) {
-      customDetails.forEach(element => {
-        element.setAttribute('open', '')
-      })
-    } else {
-      customDetails.forEach(element => {
-        element.removeAttribute('open')
-      })
+  if (customDetails) {
+    const mediaQuery = window.matchMedia("(min-width: 750px)");
+  
+    function handleMediaQueryChange(mediaQuery) {
+      if (mediaQuery.matches) {
+        customDetails.forEach(element => {
+          element.setAttribute('open', '')
+        })
+      } else {
+        customDetails.forEach(element => {
+          element.removeAttribute('open')
+        })
+      }
     }
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
   }
-  handleMediaQueryChange(mediaQuery);
-  mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-  /* Smooth Toggle Open/Close */
-
-  customDetails.forEach(element => {
-    element.addEventListener("toggle", (event) => {
-      element.querySelector('ul').classList.toggle('custom-show')
-    })
-  });
 </script>
 
 {% schema %}

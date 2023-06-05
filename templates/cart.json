@@ -8,9 +8,13 @@
       "type": "main-cart-footer",
       "blocks": {
         "subtotal": { "type": "subtotal", "settings": {} },
-        "buttons": { "type": "buttons", "settings": {} }
+        "buttons": { "type": "buttons", "settings": {} },
+        "additional_text": {
+          "type": "additional_text",
+          "setting": {}
+        }
       },
-      "block_order": ["subtotal", "buttons"],
+      "block_order": ["subtotal", "buttons", "additional_text"],
       "settings": {}
     }
   },

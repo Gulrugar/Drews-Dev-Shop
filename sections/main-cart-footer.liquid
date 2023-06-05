@@ -57,6 +57,10 @@
                   {%- endif -%}
                 </small>
               </div>
+            {%- when 'additional_text' -%}
+              <div class="rte" {{ block.shopify_attributes }}>
+                {{ block.settings.content }}
+              </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
@@ -135,6 +139,19 @@
       "type": "buttons",
       "name": "t:sections.main-cart-footer.blocks.buttons.name",
       "limit": 1
+    },
+    {
+      "type": "additional_text",
+      "name": "Additional Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Hello World!</p>"
+        }
+      ]
     },
     {
       "type": "@app"

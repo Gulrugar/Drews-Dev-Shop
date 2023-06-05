@@ -11,9 +11,7 @@
         "buttons": { "type": "buttons", "settings": {} }
       },
       "block_order": ["subtotal", "buttons"],
-      "settings": {
-        "show_additional_text": true
-      }
+      "settings": {}
     }
   },
   "order": ["cart-items", "cart-footer"]

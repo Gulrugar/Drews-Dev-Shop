@@ -1,0 +1,80 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte">
+    {{ page.content }}
+  </div>
+</div>
+<div class="page-width section-{{ section.id }}-padding">
+  <!-- Accessing the Object via shop object -->
+  {% comment %}
+    <div class="rte">
+      {% assign metaObject = shop.metaobjects.profile[page.metafields.custom.meta_object_handle] %}
+      <h3>{{ metaObject.name }}</h3>
+      <h3>{{ metaObject.content | metafield_tag }}</h3>
+    </div>
+  {% endcomment %}
+
+  <div class="rte">
+    This is the Metafield reference
+    {% assign metafieldmetaObject = page.metafields.custom.meta_object.value %}
+    <h3>{{ metafieldmetaObject.name }}</h3>
+    <h3>{{ metafieldmetaObject.content | metafield_tag }}</h3>
+  </div>
+  {% comment %}
+    
+  <img src="{{ metaObject.image.value | image_url: width: 600 }}" alt="">
+  {% endcomment %}
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

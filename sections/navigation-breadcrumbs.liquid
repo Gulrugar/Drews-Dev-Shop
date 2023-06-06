@@ -84,7 +84,7 @@
         <span aria-hidden="true">/</span>
         {{ blog.title | link_to: blog.url }}
         <span aria-hidden="true">/</span>
-        <span>{{ article.title }}</span>
+        <span>{{ article.title | truncatewords: 4 }}</span>
       {%- else -%}
         <span aria-hidden="true">/</span>
         <span>{{ page_title }}</span>

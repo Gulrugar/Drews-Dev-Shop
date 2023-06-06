@@ -1,5 +1,15 @@
 {
   "sections": {
+    "33cf2ccd-be05-4395-b5e1-df758ff3cd7d": {
+      "type": "navigation-breadcrumbs",
+      "settings": {
+        "background_color": "#fff",
+        "border_top": false,
+        "border_bottom": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -39,6 +49,7 @@
     }
   },
   "order": [
+    "33cf2ccd-be05-4395-b5e1-df758ff3cd7d",
     "main"
   ]
 }

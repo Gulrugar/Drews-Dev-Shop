@@ -14,33 +14,26 @@
   }
 {%- endstyle -%}
 
+
+{% assign metafieldmetaObject = page.metafields.custom.meta_object.value %}
 <div class="page-width section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
+    {{ metafieldmetaObject.name }}
   </h1>
   <div class="rte">
-    {{ page.content }}
+    {{ metafieldmetaObject.content | metafield_tag }}
   </div>
-</div>
-<div class="page-width section-{{ section.id }}-padding">
+    
+  <img src="{{ metafieldmetaObject.image.value | image_url: width: 600 }}" alt="">
+
   <!-- Accessing the Object via shop object -->
   {% comment %}
     <div class="rte">
       {% assign metaObject = shop.metaobjects.profile[page.metafields.custom.meta_object_handle] %}
-      <h3>{{ metaObject.name }}</h3>
-      <h3>{{ metaObject.content | metafield_tag }}</h3>
+      <h3>{{ shopMetaObject.name }}</h3>
+      <h3>{{ shopMetaObject.content | metafield_tag }}</h3>
     </div>
-  {% endcomment %}
-
-  <div class="rte">
-    This is the Metafield reference
-    {% assign metafieldmetaObject = page.metafields.custom.meta_object.value %}
-    <h3>{{ metafieldmetaObject.name }}</h3>
-    <h3>{{ metafieldmetaObject.content | metafield_tag }}</h3>
-  </div>
-  {% comment %}
-    
-  <img src="{{ metaObject.image.value | image_url: width: 600 }}" alt="">
+    <img src="{{ shopMetaObject.image.value | image_url: width: 600 }}" alt="">
   {% endcomment %}
 </div>
 

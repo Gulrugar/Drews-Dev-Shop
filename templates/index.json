@@ -35,10 +35,10 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/male-model-posing-outdoors.jpg",
+        "image": "shopify:\/\/shop_images\/shop-banner-no-logo.webp",
         "image_loading": "eager",
-        "image_overlay_opacity": 50,
-        "image_height": "medium",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",

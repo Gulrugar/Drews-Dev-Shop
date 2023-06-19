@@ -11,7 +11,7 @@
       }
     },
     "main": {
-      "type": "main-product-first-collapse-open",
+      "type": "custom-main-product",
       "blocks": {
         "vendor": {
           "type": "text",
@@ -22,13 +22,11 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -38,8 +36,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -50,8 +47,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "19b0d799-f5e4-4d35-a5b2-e5105344fbaf": {
           "type": "collapsible_tab",
@@ -87,9 +83,7 @@
         "19b0d799-f5e4-4d35-a5b2-e5105344fbaf",
         "a970713c-5912-4112-9d87-b93f8c7bd223"
       ],
-      "custom_css": [
-        ".product__accordion .icon-accordion {stroke: orange;}"
-      ],
+      "custom_css": [".product__accordion .icon-accordion {stroke: orange;}"],
       "settings": {
         "enable_sticky_info": true,
         "media_size": "medium",
@@ -109,14 +103,11 @@
       "type": "apps",
       "blocks": {
         "1e9e06ca-6d6a-4189-be2e-7c7b7792fef8": {
-          "type": "shopify:\/\/apps\/rivo-product-reviews-app-ugc\/blocks\/reviews-widget\/5f785e18-66cc-4519-8181-565d1cce1705",
-          "settings": {
-          }
+          "type": "shopify://apps/rivo-product-reviews-app-ugc/blocks/reviews-widget/5f785e18-66cc-4519-8181-565d1cce1705",
+          "settings": {}
         }
       },
-      "block_order": [
-        "1e9e06ca-6d6a-4189-be2e-7c7b7792fef8"
-      ],
+      "block_order": ["1e9e06ca-6d6a-4189-be2e-7c7b7792fef8"],
       "settings": {
         "include_margins": true
       }

@@ -15,14 +15,11 @@
           }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ],
-      "settings": {
-      }
+      "block_order": ["announcement-bar-0"],
+      "settings": {}
     },
     "header": {
-      "type": "header",
+      "type": "custom-header",
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -39,8 +36,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

@@ -1,0 +1,60 @@
+.custom-collapsible-column-873546__collapsible {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.custom-collapsible-column-873546__collapsible input {
+  display: none;
+}
+
+.custom-collapsible-column-873546__collapsible label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.custom-collapsible-column-873546__collapsible label .icon-caret {
+  position: absolute;
+  height: 0.6rem;
+  right: 1.5rem;
+  top: calc(50% - 0.2rem);
+  transform: rotate(-90deg);
+  transition: transform var(--duration-default) ease-in-out;
+}
+
+.custom-collapsible-column-873546__collapsible
+  input:checked
+  + label
+  .icon-caret {
+  transform: rotate(0);
+}
+
+.custom-collapsible-column-873546__collapsible-text {
+  margin-top: 0.5rem;
+  max-height: 1px;
+  overflow: hidden;
+  opacity: 0.5;
+  padding-top: 1rem;
+  transition: all var(--duration-default) ease-in-out;
+}
+
+.custom-collapsible-column-873546__collapsible
+  input:checked
+  ~ .custom-collapsible-column-873546__collapsible-text {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.custom-collapsible-column-873546__collapsible-text ul {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .custom-collapsible-column-873546__collapsible {
+    max-width: 300px;
+  }
+}

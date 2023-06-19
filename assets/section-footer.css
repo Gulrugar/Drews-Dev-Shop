@@ -537,3 +537,15 @@
 .custom-details ul {
   padding-top: 1rem;
 }
+
+/* chatQPt */
+
+.custom-details ul {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+}
+
+.custom-details[open] ul {
+  max-height: 500px; /* Adjust the value to accommodate your content */
+}

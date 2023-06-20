@@ -120,10 +120,36 @@
         "content": "t:settings_schema.typography.settings.header__1.content"
       },
       {
-        "type": "checkbox",
-        "id": "use_custom_body_font",
-        "default": false,
-        "label": "Use the Custom Body Font: Kablammo"
+        "type": "select",
+        "id": "custom_body_font",
+        "label": "Use A Custom Body Font",
+        "options": [
+          {
+            "value": "",
+            "label": "--No Custom Font--"
+          },
+          {
+            "value": "Livvec",
+            "label": "Livvec"
+          }
+        ],
+        "default": ""
+      },
+      {
+        "type": "select",
+        "id": "custom_header_font",
+        "label": "Use A Custom Header Font",
+        "options": [
+          {
+            "value": "",
+            "label": "--No Custom Font--"
+          },
+          {
+            "value": "Kablammo",
+            "label": "Kablammo"
+          }
+        ],
+        "default": ""
       },
       {
         "type": "font_picker",

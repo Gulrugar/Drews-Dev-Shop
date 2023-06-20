@@ -1,0 +1,46 @@
+{%- case settings.custom_body_font -%}
+  {%- when 'Livvic' -%}
+    @font-face {
+      font-family: "Livvic";
+      src: url({{ "Livvic-Regular.ttf" | asset_url }}) format("truetype");
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: "Livvic";
+      src: url({{ "Livvic-Bold.ttf" | asset_url }}) format("truetype");
+      font-weight: bold;
+    }
+{%- endcase -%}
+
+{%- case settings.custom_header_font -%}
+  {%- when 'Kablammo' -%}
+    @font-face {
+      font-family: "Kablammo";
+      src: url({{ "Kablammo-Regular.ttf" | asset_url }}) format("truetype");
+    }
+{%- endcase -%}
+
+:root {
+  {%- if settings.custom_body_font != blank -%}
+    --font-body-family: {{ settings.custom_body_font }}, sans-serif;
+    --font-body-style: normal;
+    --font-body-weight: 400;
+    --font-body-weight-bold: 700;
+  {%- else -%}
+    --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+    --font-body-style: {{ settings.type_body_font.style }};
+    --font-body-weight: {{ settings.type_body_font.weight }};
+    --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+  {%- endif -%}
+
+  {%- if settings.use_custom_header_font != blank -%}
+    --font-heading-family: {{ settings.custom_header_font }}, sans-serif;
+    --font-heading-style: normal;
+    --font-heading-weight: 700;
+  {%- else -%}
+    --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    --font-heading-style: {{ settings.type_header_font.style }};
+    --font-heading-weight: {{ settings.type_header_font.weight }};
+  {%- endif -%}
+}

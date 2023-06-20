@@ -120,6 +120,12 @@
         "content": "t:settings_schema.typography.settings.header__1.content"
       },
       {
+        "type": "checkbox",
+        "id": "use_custom_body_font",
+        "default": false,
+        "label": "Use the Custom Body Font: Kablammo"
+      },
+      {
         "type": "font_picker",
         "id": "type_header_font",
         "default": "assistant_n4",

@@ -71,15 +71,27 @@
                 </div>
                 {%- for filter in results.filters -%}
                   {%- for value in filter.active_values -%}
-                    <facet-remove>
-                      <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
-                        <span class="active-facets__button-inner button button--tertiary">
-                          {{ filter.label }}: {{ value.label | escape }}
-                          {% render 'icon-close-small' %}
-                          <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                        </span>
-                      </a>
-                    </facet-remove>
+                    {%- if filter.label == "Color" -%}
+                      <facet-remove>
+                        <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+                          <span class="active-facets__button-inner button button--tertiary">
+                            {{ filter.label }}: {{ value.label | escape }}
+                            {% render 'icon-close-small' %}
+                            <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                          </span>
+                        </a>
+                      </facet-remove>
+                    {%- else -%}
+                      <facet-remove>
+                        <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+                          <span class="active-facets__button-inner button button--tertiary">
+                            {{ filter.label }}: {{ value.label | escape }}
+                            {% render 'icon-close-small' %}
+                            <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                          </span>
+                        </a>
+                      </facet-remove>
+                    {%- endif -%}
                   {%- endfor -%}
                   {% if filter.type == 'price_range' %}
                     {%- if filter.min_value.value != null or filter.max_value.value != null -%}
@@ -258,7 +270,7 @@
                         </ul>
                         {% comment %} No show more for no JS {% endcomment %}
                         <ul
-                          class="{% if filter_type != 'vertical' %} facets__list{% endif %} no-js-list list-unstyled no-js"
+                          class="{% if filter_type != 'vertical' %} facets__list{% endif %}{% if filter.label == "Color" %} color-swatch-list{% endif %} no-js-list list-unstyled no-js"
                           role="list"
                         > 
                           {%- if filter.label == "Color" -%}
@@ -267,7 +279,7 @@
                                 <label
                                   style="background-image: url({{ value.value | append: ".jpg" | file_url }})"
                                   for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
-                                  class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                  class="color-swatch facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
                                   title="Remove: {{ value.value }}"
                                 >
                                   <input

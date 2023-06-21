@@ -74,8 +74,9 @@
                     {%- if filter.label == "Color" -%}
                       <facet-remove>
                         <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
-                          <span class="active-facets__button-inner button button--tertiary">
-                            {{ filter.label }}: {{ value.label | escape }}
+                          <span class="active-facets__button-inner button button--tertiary" style="display:flex; align-items: center;">
+                            <span class="color-swatch" style="background-image: url({{ value.value | append: ".jpg" | file_url }})"></span>
+                            <span style="vertical-align: middle;">{{ filter.label }}: {{ value.label | escape }}</span>
                             {% render 'icon-close-small' %}
                             <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                           </span>
@@ -280,7 +281,7 @@
                                   style="background-image: url({{ value.value | append: ".jpg" | file_url }})"
                                   for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
                                   class="color-swatch facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
-                                  title="Remove: {{ value.value }}"
+                                  title="{{ value.value }}"
                                 >
                                   <input
                                     type="checkbox"
@@ -798,6 +799,10 @@
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                   </svg>
 
+                                  {%- if filter.label == "Color" -%}
+                                    <span class="color-swatch" style="background-image: url({{ value.value | append: ".jpg" | file_url }})"></span>
+                                  {%- endif -%}
+
                                   <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                   <span class="visually-hidden">
                                     {{- value.label | escape }} (
@@ -1017,15 +1022,28 @@
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
     {%- for filter in results.filters -%}
       {%- for value in filter.active_values -%}
-        <facet-remove>
-          <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
-            <span class="active-facets__button-inner button button--tertiary">
-              {{ filter.label }}: {{ value.label | escape }}
-              {% render 'icon-close-small' %}
-              <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-            </span>
-          </a>
-        </facet-remove>
+        {%- if filter.label == "Color" -%}
+          <facet-remove>
+            <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+              <span class="active-facets__button-inner button button--tertiary" style="display:flex; align-items: center;">
+                <span class="color-swatch" style="background-image: url({{ value.value | append: ".jpg" | file_url }})"></span>
+                <span style="vertical-align: middle;">{{ filter.label }}: {{ value.label | escape }}</span>
+                {% render 'icon-close-small' %}
+                <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+              </span>
+            </a>
+          </facet-remove>
+        {%- else -%}
+          <facet-remove>
+            <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+              <span class="active-facets__button-inner button button--tertiary">
+                {{ filter.label }}: {{ value.label | escape }}
+                {% render 'icon-close-small' %}
+                <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+              </span>
+            </a>
+          </facet-remove>
+        {%- endif -%}
       {%- endfor -%}
 
       {%- if filter.type == 'price_range' -%}

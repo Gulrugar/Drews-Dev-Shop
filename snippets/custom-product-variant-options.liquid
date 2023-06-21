@@ -60,7 +60,7 @@
     >
     <!-- Custom Code START -->
     {% if option.name == "Color" %}
-      <label class="color-swatch" style="background-image: url({{ value | append: ".jpg" | file_url }})" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      <label class="color-swatch" style="background-image: url({{ value | append: ".jpg" | file_url }})" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" title="{{ value }}">
         <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>
     {% else %}

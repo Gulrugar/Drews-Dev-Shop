@@ -12,16 +12,24 @@
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
     
-
+      
     {% liquid
-      assign body_font_no_load = settings.type_body_font.system? or settings.custom_body_font != blank
-      assign header_font_no_load = settings.type_header_font.system? or settings.custom_header_font != blank
+      assign body_font_no_cdn = false
+      if settings.type_body_font.system? or settings.custom_body_font.size > 0
+        assign body_font_no_cdn = true
+      endif
 
-      unless body_font_no_load and header_font_no_load
+      assign header_font_no_cdn = false
+      if settings.type_header_font.system? or settings.custom_header_font.size > 0
+        assign header_font_no_cdn = true
+      endif
+
+      unless body_font_no_cdn and header_font_no_cdn
+        echo 'didnt work'
         echo '<link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>'
       endunless
     %}
-
+    
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}

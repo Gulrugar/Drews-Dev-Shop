@@ -152,6 +152,22 @@
         "default": ""
       },
       {
+        "type": "select",
+        "id": "custom_header_font_weight",
+        "label": "Weight for the Custom Header Font",
+        "options": [
+          {
+            "value": 400,
+            "label": "400"
+          },
+          {
+            "value": 700,
+            "label": "700"
+          }
+        ],
+        "default": 400
+      },
+      {
         "type": "font_picker",
         "id": "type_header_font",
         "default": "assistant_n4",

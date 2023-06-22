@@ -32,7 +32,7 @@
   {%- if settings.use_custom_header_font != blank -%}
     --font-heading-family: {{ settings.custom_header_font }}, sans-serif;
     --font-heading-style: normal;
-    --font-heading-weight: 700;
+    --font-heading-weight: {{ settings.custom_header_font_weight }};
   {%- else -%}
     --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
     --font-heading-style: {{ settings.type_header_font.style }};

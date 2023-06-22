@@ -15,11 +15,8 @@
           }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ],
-      "settings": {
-      }
+      "block_order": ["announcement-bar-0"],
+      "settings": {}
     },
     "header": {
       "type": "custom-header",
@@ -43,8 +40,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

@@ -1,23 +1,18 @@
 {%- case settings.custom_body_font -%}
-  {%- when 'Livvic' -%}
+  {%- when 'Amazon Ember' -%}
     @font-face {
-      font-family: "Livvic";
-      src: url({{ "Livvic-Regular.ttf" | asset_url }}) format("truetype");
-      font-weight: normal;
-    }
-
-    @font-face {
-      font-family: "Livvic";
-      src: url({{ "Livvic-Bold.ttf" | asset_url }}) format("truetype");
-      font-weight: bold;
+      font-family: "Amazon Ember";
+      src: url({{ "Amazon Ember.woff2" | asset_url }}) format("woff2");
+      font-display: swap;
     }
 {%- endcase -%}
 
 {%- case settings.custom_header_font -%}
-  {%- when 'Kablammo' -%}
+  {%- when 'Amazon Ember Bold' -%}
     @font-face {
-      font-family: "Kablammo";
-      src: url({{ "Kablammo-Regular.ttf" | asset_url }}) format("truetype");
+      font-family: "Amazon Ember Bold";
+      src: url({{ "Amazon Ember Bold.woff2" | asset_url }}) format("woff2");
+      font-display: swap;
     }
 {%- endcase -%}
 

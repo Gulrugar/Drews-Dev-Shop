@@ -129,8 +129,8 @@
             "label": "--No Custom Font--"
           },
           {
-            "value": "Livvec",
-            "label": "Livvec"
+            "value": "Amazon Ember",
+            "label": "Amazon Ember"
           }
         ],
         "default": ""
@@ -145,8 +145,8 @@
             "label": "--No Custom Font--"
           },
           {
-            "value": "Kablammo",
-            "label": "Kablammo"
+            "value": "Amazon Ember Bold",
+            "label": "Amazon Ember Bold"
           }
         ],
         "default": ""

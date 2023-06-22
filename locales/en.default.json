@@ -467,12 +467,5 @@
       "message": "Message",
       "max_characters": "{{ max_chars }} characters max"
     }
-  },
-  "shopify": {
-    "filters": {
-      "tags": {
-        "label": "Tags"
-      }
-    }
   }
 }

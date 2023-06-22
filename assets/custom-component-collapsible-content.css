@@ -51,8 +51,22 @@
   margin-left: 0.5rem;
 }
 
+@media screen and (max-width: 749px) {
+  .footer-block.grid__item.footer-block--menu {
+    margin: 2rem 0;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+}
+
 @media screen and (min-width: 750px) {
   .custom-collapsible-column-873546__collapsible {
     max-width: 300px;
+  }
+
+  .custom-collapsible-column-873546__collapsible label {
+    pointer-events: none;
+  }
+  .custom-collapsible-column-873546__collapsible label .icon-caret {
+    display: none;
   }
 }

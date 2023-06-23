@@ -127,15 +127,17 @@
                           class="footer-block__image-wrapper global-media-settings"
                           style="max-width: min(100%, {{ settings.brand_image_width }}px);"
                         >
-                          {{
-                            settings.brand_image
-                            | image_url: width: 1100
-                            | image_tag:
-                              loading: 'lazy',
-                              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-                              height: brand_image_height,
-                              width: settings.brand_image_width
-                          }}
+                          <a href="{{ routes.root_url }}">
+                            {{
+                              settings.brand_image
+                              | image_url: width: 1100
+                              | image_tag:
+                                loading: 'lazy',
+                                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                                height: brand_image_height,
+                                width: settings.brand_image_width
+                            }}
+                          </a>
                         </div>
                       {%- endif -%}
                       {%- if settings.brand_headline != blank -%}

@@ -49,9 +49,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -69,10 +67,8 @@
       }
     },
     "product-grid": {
-      "type": "main-collection-product-grid",
-      "custom_css": [
-
-      ],
+      "type": "custom-main-collection-product-grid",
+      "custom_css": [],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,

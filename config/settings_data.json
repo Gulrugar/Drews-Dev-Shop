@@ -2,7 +2,7 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/logo_300x300_cf659581-659c-4b41-a96c-9497451f6140.png",
     "logo_width": 110,
-    "favicon": "shopify:\/\/shop_images\/profile-pic-favicon.png",
+    "favicon": "shopify:\/\/shop_images\/logo_32x32-favicon.png",
     "colors_solid_button_labels": "#000000",
     "colors_accent_1": "#43ccfa",
     "gradient_accent_1": "",
@@ -16,7 +16,6 @@
     "gradient_background_2": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
     "custom_body_font": "Amazon Ember",
     "custom_header_font": "Amazon Ember Bold",
-    "custom_header_font_weight": 400,
     "type_header_font": "playfair_display_n7",
     "heading_scale": 115,
     "type_body_font": "assistant_n4",
@@ -132,6 +131,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "custom_header_font_weight": 400,
     "use_custom_header_font": true,
     "sections": {
       "main-password-header": {

@@ -3190,30 +3190,6 @@ details-disclosure > details {
   }
 }
 
-/* Back to top button START */
-
-.gotopbtn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: rgb(var(--color-background));
-  bottom: 100px;
-  right: 10px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: rgb(var(--color-base-text));
-  z-index: 3;
-  outline: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.fa-solid-up-arrow {
-  height: 30px;
-  transform: translateY(25%);
-}
-
-/* Back to top button END */
-
 /* Shopify Policy Pages */
 .shopify-policy__body {
   padding-bottom: 36px;

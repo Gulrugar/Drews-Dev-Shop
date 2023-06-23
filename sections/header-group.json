@@ -4,6 +4,9 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "custom_css": [
+        ".announcement-bar__message span { color: rgb(var(--color-base-background-1)); }"
+      ],
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",

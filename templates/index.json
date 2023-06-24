@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>D D S</strong>",
+            "heading": "<strong>D D S<\/strong>",
             "heading_size": "h0"
           }
         },
@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -35,10 +35,10 @@
         "button"
       ],
       "custom_css": [
-        ".banner__heading { background: var(--gradient-base-background-2); color: transparent; background-clip: text; -webkit-background-clip: text; }"
+        ".banner__heading {background: var(--gradient-base-background-2); color: transparent; background-clip: text; -webkit-background-clip: text;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/shop-banner-no-logo_cdcf03f9-447c-4e4d-ac7a-7ea7526e1c68.webp",
+        "image": "shopify:\/\/shop_images\/shop-banner-no-logo_cdcf03f9-447c-4e4d-ac7a-7ea7526e1c68.webp",
         "image_loading": "eager",
         "image_overlay_opacity": 30,
         "image_height": "large",
@@ -57,7 +57,7 @@
       "settings": {
         "title": "Latest Arrivals",
         "heading_size": "h1",
-        "description": "<p>Browse our latest arrival of art branded t-shirts, water bottles and sneakers</p>",
+        "description": "<p>Browse our latest arrival of art branded t-shirts, water bottles and sneakers<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "latest-arrivals",
@@ -85,9 +85,9 @@
         "template--19249918181678__f4daff55-a929-4be4-8ee1-f7109ed4994b-1685559961c44dfda4-0": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/high_quality_materials.jpg",
-            "title": "<em>High Quality Materials</em>",
-            "text": "<p>Our products are meticulously crafted using the finest quality materials, ensuring exceptional durability and longevity. </p>",
+            "image": "shopify:\/\/shop_images\/high_quality_materials.jpg",
+            "title": "<em>High Quality Materials<\/em>",
+            "text": "<p>Our products are meticulously crafted using the finest quality materials, ensuring exceptional durability and longevity. <\/p>",
             "link_label": "Learn More",
             "link": ""
           }
@@ -95,9 +95,9 @@
         "template--19249918181678__f4daff55-a929-4be4-8ee1-f7109ed4994b-1685559961c44dfda4-1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/artists_creating_digital_art.jpg",
-            "title": "<em>Artistic Designs</em>",
-            "text": "<p>Our artistic designs are a fusion of creativity and passion, capturing the essence of beauty and expression in every intricate detail.</p>",
+            "image": "shopify:\/\/shop_images\/artists_creating_digital_art.jpg",
+            "title": "<em>Artistic Designs<\/em>",
+            "text": "<p>Our artistic designs are a fusion of creativity and passion, capturing the essence of beauty and expression in every intricate detail.<\/p>",
             "link_label": "Learn More",
             "link": ""
           }
@@ -105,9 +105,9 @@
         "template--19249918181678__f4daff55-a929-4be4-8ee1-f7109ed4994b-1685559961c44dfda4-2": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/teens_skating_wearing_graphic_designs.jpg",
-            "title": "<em>Popular Styles</em>",
-            "text": "<p>Our products embody the latest trends and popular styles, ensuring that you stay fashionable and on-trend.</p>",
+            "image": "shopify:\/\/shop_images\/teens_skating_wearing_graphic_designs.jpg",
+            "title": "<em>Popular Styles<\/em>",
+            "text": "<p>Our products embody the latest trends and popular styles, ensuring that you stay fashionable and on-trend.<\/p>",
             "link_label": "Learn More",
             "link": ""
           }
@@ -141,7 +141,7 @@
         "d1358a5f-9dd3-4e71-a6c7-7b3f7500f570": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>D D S</strong>",
+            "heading": "<strong>D D S<\/strong>",
             "heading_size": "h1"
           }
         },
@@ -158,10 +158,10 @@
         "template--19249918181678__cbcaaab6-0a44-47c9-abef-89d4c1b3f85d-1685660556c6d62aa1-1"
       ],
       "custom_css": [
-        ".banner__heading { background: var(--gradient-base-background-2); color: transparent; background-clip: text; -webkit-background-clip: text; }"
+        ".banner__heading {background: var(--gradient-base-background-2); color: transparent; background-clip: text; -webkit-background-clip: text;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/urban-mens-fashion-on-young-adult.jpg",
+        "image": "shopify:\/\/shop_images\/shop_banner_middle.jpg",
         "image_loading": "lazy",
         "image_overlay_opacity": 50,
         "image_height": "medium",
@@ -188,17 +188,17 @@
         "template--19249918181678__d723d292-119d-46e2-8e16-eda1a98cbbbf-16855600588c3e85b6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>DDS is committed to bringing you top quality designs and graphics for you to show off your unique style. Whether its clothing or accessories DDS has you covered. </p><p>We have a wide variety of unique designs in...</p><p><strong>Apparel:</strong></p><p>T-Shirts, Hoodies, Shoes, Hats</p><p><strong>Accessories:</strong></p><p>Water Bottles, Phone Covers, Watches, Bracelet</p>"
+            "text": "<p>DDS is committed to bringing you top quality designs and graphics for you to show off your unique style. Whether its clothing or accessories DDS has you covered. <\/p><p>We have a wide variety of unique designs in...<\/p><p><strong>Apparel:<\/strong><\/p><p>T-Shirts, Hoodies, Shoes, Hats<\/p><p><strong>Accessories:<\/strong><\/p><p>Water Bottles, Phone Covers, Watches, Bracelet<\/p>"
           }
         },
         "ef3d004a-fcf9-4ac9-9338-9e641350174b": {
           "type": "button",
           "settings": {
             "button_label": "Shop Apparel",
-            "button_link": "shopify://collections/apparel",
+            "button_link": "shopify:\/\/collections\/apparel",
             "button_style_secondary": true,
             "button_label_2": "Shop Accessories",
-            "button_link_2": "shopify://collections/accessories",
+            "button_link_2": "shopify:\/\/collections\/accessories",
             "button_style_secondary_2": false
           }
         }
@@ -222,7 +222,7 @@
       "settings": {
         "title": "T-Shirts",
         "heading_size": "h1",
-        "description": "<p>Branded T-Shirts with Artistic Designs</p>",
+        "description": "<p>Branded T-Shirts with Artistic Designs<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "t-shirts",
@@ -249,7 +249,7 @@
       "settings": {
         "title": "Footwear",
         "heading_size": "h1",
-        "description": "<p>All footwear is on sale 25% percent off</p>",
+        "description": "<p>All footwear is on sale 25% percent off<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "footwear",
@@ -276,7 +276,7 @@
       "settings": {
         "title": "Drinkware",
         "heading_size": "h1",
-        "description": "<p>Quench your thirst for stylish designs</p>",
+        "description": "<p>Quench your thirst for stylish designs<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "drinkware",
@@ -365,14 +365,14 @@
         "template--19249918181678__a4f2684f-178d-4525-9b58-96bc37f935c4-16855600588c3e85b6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the limitless possibilities of personalized style with DDS.</p><p>In addition to our extensive selection of high-quality products, we proudly offer custom designs that allow you to create something truly unique. Our team of skilled artisans and designers are ready to bring your vision to life, whether it's customizing an existing product or creating something entirely new. From personalized engravings to bespoke creations tailored to your specifications, we are committed to delivering exceptional craftsmanship and attention to detail.</p><p>Unleash your creativity and make a statement with our custom design services, turning your imagination into reality. Elevate your shopping experience and let us help you showcase your individuality and express your distinct taste.</p>"
+            "text": "<p>Discover the limitless possibilities of personalized style with DDS.<\/p><p>In addition to our extensive selection of high-quality products, we proudly offer custom designs that allow you to create something truly unique. Our team of skilled artisans and designers are ready to bring your vision to life, whether it's customizing an existing product or creating something entirely new. From personalized engravings to bespoke creations tailored to your specifications, we are committed to delivering exceptional craftsmanship and attention to detail.<\/p><p>Unleash your creativity and make a statement with our custom design services, turning your imagination into reality. Elevate your shopping experience and let us help you showcase your individuality and express your distinct taste.<\/p>"
           }
         },
         "template--19249918181678__a4f2684f-178d-4525-9b58-96bc37f935c4-16855600588c3e85b6-2": {
           "type": "button",
           "settings": {
             "button_label": "Send Us An Email",
-            "button_link": "shopify://pages/contact",
+            "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -407,12 +407,13 @@
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [

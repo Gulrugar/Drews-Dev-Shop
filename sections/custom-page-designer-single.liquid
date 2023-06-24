@@ -1,4 +1,4 @@
-{{ 'custom-page-designers.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,20 +14,13 @@
   }
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}-padding">
-  {%- for designer in shop.metaobjects.designer.values -%}
-    <a class="custom-page-designers-link" href="{{ routes.root_url | append: "pages/" | append: designer.system.handle }}">
-      <div class="designer-container">
-        <div class="img">
-            <img src="{{ designer.photo | img_url:'500x' }}" alt="Designer">
-        </div>
-        <div class="designer-body">
-            <h2 class="h1">{{ designer.name }}</h2>
-            <p class="designer-text">{{ designer.description }}</p>
-        </div>
-      </div>
-    </a>
-  {%- endfor -%}
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte">
+    {{ page.content }}
+  </div>
 </div>
 
 {% schema %}

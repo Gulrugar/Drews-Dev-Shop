@@ -1,0 +1,54 @@
+.designer-container {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 3rem;
+  margin-top: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 2rem;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.designer-container img {
+  max-width: 100%;
+  height: auto;
+}
+.designer-container span {
+  font-style: italic;
+}
+.designer-container h4 {
+  margin-bottom: 0;
+}
+.designer-container h2 {
+  font-weight: bold;
+}
+.designer-container .img {
+  width: 40%;
+}
+.designer-body {
+  width: 60%;
+  line-height: 1.8;
+}
+.designer-body h2 {
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .designer-container {
+    flex-direction: column;
+  }
+}
+
+/* My Code */
+.custom-page-designers-link {
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.designer-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 7px 15px;
+  transform: scale(1.025);
+}

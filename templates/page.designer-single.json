@@ -1,19 +1,9 @@
 {
   "sections": {
-    "navigation-breadcrumbs": {
-      "type": "navigation-breadcrumbs",
-      "settings": {
-        "background_color": "#ffffff",
-        "border_top": false,
-        "border_bottom": true,
-        "padding_top": 16,
-        "padding_bottom": 16
-      }
-    },
     "main": {
       "type": "custom-page-designer-single",
-      "settings": { "padding_top": 0, "padding_bottom": 52 }
+      "settings": { "padding_top": 28, "padding_bottom": 28 }
     }
   },
-  "order": ["navigation-breadcrumbs", "main"]
+  "order": ["main"]
 }

@@ -1,4 +1,30 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{{ 'navigation-breadcrumbs.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .navigation-breadcrumbs {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .navigation-breadcrumbs::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-28px);
+  }
+
+  .navigation-breadcrumbs::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(28px);
+  }
+</style>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,14 +40,27 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+{% assign designer = page.metafields.custom.designer.value %}
+
+<div class="navigation-breadcrumbs">
+  <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
+    <a href="{{ routes.root_url }}" title="Home">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="{{ routes.root_url | append: "pages/designers/" }}">Designers</a>
+    <span aria-hidden="true">/</span>
+    <span>{{ page.title }}</span>
+  </nav>
+</div>
+<div class="page-width section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
+    {{ designer.name }}
   </h1>
   <div class="rte">
-    {{ page.content }}
+    {{ designer.description | metafield_tag }}
   </div>
-</div>
+    
+  <img src="{{ designer.photo.value | image_url: width: 600 }}" alt="">
+</div>  
 
 {% schema %}
 {

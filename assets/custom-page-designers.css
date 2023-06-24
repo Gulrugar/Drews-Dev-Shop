@@ -13,8 +13,7 @@
 }
 
 .designer-container img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .designer-container span {
   font-style: italic;
@@ -35,11 +34,6 @@
 .designer-body h2 {
   margin: 0;
 }
-@media only screen and (max-width: 768px) {
-  .designer-container {
-    flex-direction: column;
-  }
-}
 
 /* My Code */
 .custom-page-designers-link {
@@ -53,4 +47,17 @@
 .designer-container:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 2px 7px 15px;
   transform: scale(1.025);
+}
+
+@media screen and (max-width: 989px) {
+  .custom-page-designers-link {
+    flex-direction: column;
+  }
+
+  .designer-container .img {
+    width: auto;
+  }
+  .designer-body {
+    width: auto;
+  }
 }

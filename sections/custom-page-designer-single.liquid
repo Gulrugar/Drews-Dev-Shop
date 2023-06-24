@@ -24,6 +24,41 @@
     background-color: rgba(0, 0, 0, 0.2);
     transform: translateY(28px);
   }
+
+  .custom-flex-container {
+    display: flex;
+  }
+
+  .custom-flex-container > .rte {
+    padding-left: 20px;
+  }
+
+  .custom-flex-container img {
+    width: 100%;
+  }
+  
+  .custom-flex-container > div:nth-child(1),
+  .custom-flex-container > .rte {
+    width: 50%;
+  }
+
+  .custom-flex-container + .rte {
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .custom-flex-container {
+      flex-direction: column;
+    }
+
+    .custom-flex-container > div:nth-child(1) {
+      width: 100%;
+    }
+
+    .custom-flex-container > .rte {
+      display: none;
+    }
+  }
 </style>
 
 {%- style -%}
@@ -55,11 +90,19 @@
   <h1 class="main-page-title page-title h0">
     {{ designer.name }}
   </h1>
+  <div class="custom-flex-container">
+    <div>
+      <img src="{{ designer.photo.value | image_url: width: 600 }}" alt="">
+    </div>
+    <div class="rte">
+      {{ designer.description | metafield_tag }}
+    </div>
+  </div>
   <div class="rte">
-    {{ designer.description | metafield_tag }}
+    {{ page.content }}
   </div>
   <div>
-    <img style="max-width: 100%;" src="{{ designer.photo.value | image_url: width: 600 }}" alt="">
+
   </div>
 </div>  
 

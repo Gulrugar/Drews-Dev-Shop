@@ -46,7 +46,7 @@
   <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
     <a href="{{ routes.root_url }}" title="Home">Home</a>
     <span aria-hidden="true">/</span>
-    <a href="{{ routes.root_url | append: "pages/designers/" }}">Designers</a>
+    <a href="{{ section.settings.directory_page.url }}">{{ section.settings.directory_page.title }}</a>
     <span aria-hidden="true">/</span>
     <span>{{ page.title }}</span>
   </nav>
@@ -58,8 +58,9 @@
   <div class="rte">
     {{ designer.description | metafield_tag }}
   </div>
-    
-  <img src="{{ designer.photo.value | image_url: width: 600 }}" alt="">
+  <div>
+    <img style="max-width: 100%;" src="{{ designer.photo.value | image_url: width: 600 }}" alt="">
+  </div>
 </div>  
 
 {% schema %}
@@ -91,6 +92,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "page",
+      "id": "directory_page",
+      "label": "The directory page to link to"
     }
   ]
 }

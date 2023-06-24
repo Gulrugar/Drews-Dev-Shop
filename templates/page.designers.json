@@ -2,7 +2,7 @@
   "sections": {
     "main": {
       "type": "custom-page-designers",
-      "settings": { "padding_top": 0, "padding_bottom": 52 }
+      "settings": { "padding_top": 40, "padding_bottom": 40 }
     }
   },
   "order": ["main"]

@@ -14,18 +14,17 @@
   }
 {%- endstyle -%}
 
-{% assign metaFieldMetaObject = page.metafields.custom.meta_object.value %}
 <div class="page-width section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0">
-    {{ metaFieldMetaObject.name }}
-  </h1>
-  <div class="rte">
-    {{ metaFieldMetaObject.content | metafield_tag }}
-  </div>
-    
-  <img src="{{ metaFieldMetaObject.image.value | image_url: width: 600 }}" alt="">
+  {%- for designer in shop.metaobjects.profile.values -%}
+    <h1 class="main-page-title page-title h0">
+      {{ designer.name }}
+    </h1>
+    <div class="rte">
+      {{ designer.content | metafield_tag }}
+    </div>
+  {%- endfor -%}
 
-  <a href="{{ routes.root_url | append: "pages/" | append: metaFieldMetaObject.system.handle }}">{{ metaFieldMetaObject.name }}</a>
+    
 
   <!-- Accessing the Object via shop object -->
   {% comment %}

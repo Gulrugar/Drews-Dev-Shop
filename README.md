@@ -50,7 +50,7 @@ Customizations on the collection page:
 
 ### Product Page
 
-Customizations on the collection page:
+Customizations on the product page:
 
 1. Navigation Breadcrumbs
 2. Swatches for color variants instead of text
@@ -66,7 +66,7 @@ Customizations on the collection page:
 
 ### Cart Page
 
-Customizations on the collection page:
+Customizations on the cart page:
 
 1. Trust Badges under Checkout button
 2. Shipping details under Checkout button

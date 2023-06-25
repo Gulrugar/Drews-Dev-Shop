@@ -861,10 +861,10 @@
   
 {% endif %}
 <script>
-  const detailsElements = document.querySelectorAll("header-menu > details");
+  const headerDetailsEls = document.querySelectorAll("header-menu > details");
 
-  if (detailsElements) {
-    detailsElements.forEach((details) => {
+  if (headerDetailsEls) {
+    headerDetailsEls.forEach((details) => {
       details.addEventListener("mouseenter", () => {
         details.open = true;
       });

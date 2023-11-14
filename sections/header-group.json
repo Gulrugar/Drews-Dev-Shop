@@ -4,9 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "custom_css": [
-        ".announcement-bar__message span { color: rgb(var(--color-base-background-1)); }"
-      ],
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -14,18 +11,24 @@
             "text": "Welcome to Drew's Development Store",
             "text_alignment": "center",
             "color_scheme": "accent-1",
-            "link": ""
+            "link": "\/"
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
-      "settings": {}
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "custom_css": [
+        ".announcement-bar__message span {color: rgb(var(--color-base-background-1));}"
+      ],
+      "settings": {
+      }
     },
     "header": {
       "type": "custom-header",
       "custom_css": [
-        ".header__heading-logo {transition: transform .2s ease;}",
-        ".header__heading-logo:hover {transform: scale(1.1)}"
+        ".header__heading-logo {transition: transform 0.2s ease;}",
+        ".header__heading-logo:hover {transform: scale(1.1);}"
       ],
       "settings": {
         "logo_position": "middle-left",
@@ -43,5 +46,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }

@@ -1,0 +1,30 @@
+{{ "section-custom-video.css" |  asset_url | stylesheet_tag }}
+
+<div>
+  <h1>Hello world</h1>
+</div>
+
+{% schema %}
+{
+  "name": "Custom video section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Shopify-hosted video"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    }
+  ],
+  "presets": [
+    {"name": "Custom Video"}
+  ]
+}
+{% endschema %}

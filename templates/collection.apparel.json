@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "8b546584-7e37-43ea-bafe-0639671379ad": {
@@ -6,7 +15,7 @@
         "template--19417301451054__8b546584-7e37-43ea-bafe-0639671379ad-16859203636f5c5262-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "t-shirts"
+            "collection": "t-shirts-filter-p-m-custom-color_filter_swatch-gid-3a-2f-2fshopify-2fmetaobject-2f56995676462-filter-v-price-gte-filter-v-price-lte-sort_by-best-selling"
           }
         },
         "template--19417301451054__8b546584-7e37-43ea-bafe-0639671379ad-16859203636f5c5262-1": {

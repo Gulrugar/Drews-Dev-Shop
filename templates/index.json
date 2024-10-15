@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -55,7 +64,8 @@
     },
     "custom_video": {
       "type": "custom-video",
-      "block_order": []
+      "settings": {
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -230,7 +240,7 @@
         "description": "<p>Branded T-Shirts with Artistic Designs</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "t-shirts",
+        "collection": "t-shirts-filter-p-m-custom-color_filter_swatch-gid-3a-2f-2fshopify-2fmetaobject-2f56995676462-filter-v-price-gte-filter-v-price-lte-sort_by-best-selling",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -417,7 +427,8 @@
         },
         "template--19249918181678__03881e2f-a97c-4d17-939a-0ef2863dcc83-1685560207ff2021f7-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [

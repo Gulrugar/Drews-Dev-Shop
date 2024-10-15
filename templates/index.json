@@ -240,7 +240,7 @@
         "description": "<p>Branded T-Shirts with Artistic Designs</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "t-shirts-filter-v-option-color-black-filter-v-price-gte-filter-v-price-lte-sort_by-best-selling",
+        "collection": "t-shirts",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
